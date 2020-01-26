@@ -1,6 +1,7 @@
 # flask_directory_structure :
-## TO create project structure run script using below command :  
-	python3 create_flask_project.py
+## To create project structure run script using below command :
+	1. copy/clone code from here https://github.com/rohitit09/flask_directory_structure.git  
+		python3 create_flask_project.py
 
 ## provide areguments
 	1. creating project : YES/NO
