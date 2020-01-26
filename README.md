@@ -2,10 +2,12 @@
 ## To create project structure run script using below command :
 1. Copy/clone code from here 
 
-```git clone [https://github.com/rohitit09/flask_directory_structure.git]```
+```git clone https://github.com/rohitit09/flask_directory_structure.git ```
 
+2. Go to the clone directory and run the following commands	
+	
 	```python3 create_flask_project.py```
-2.  follow the instructions appeared in console
+3.  follow the instructions appeared in console
 
 ## Provide areguments
 1. creating project : YES/NO
