@@ -2,7 +2,7 @@
 ## To create project structure run script using below command :
 1. Copy/clone code from here 
 
-```git clone https://github.com/rohitit09/flask_directory_structure.git ```
+	```git clone https://github.com/rohitit09/flask_directory_structure.git ```
 
 2. Go to the clone directory and run the following commands	
 	
@@ -38,5 +38,5 @@
 2. ubuntu
 3. linux
 
-## type below in browser to check application is running?
+## Type below URL in browser to check application is running?
 [localhost:5000/](localhost:5000/)
