@@ -16,7 +16,19 @@ def setup_project():
     # os.system("brew install autoenv")
     # os.system("echo 'source $(brew --prefix autoenv)/activate.sh' >> ~/.bash_profile")'''
     # import ipdb; ipdb.set_trace()
-    project_name=input("enter project name:")
+    print("Current Directory: ",os.getcwd())
+    project_loc=input("Enter project location or hit enter for current location :")
+    print(project_loc)
+    if project_loc !='':
+        try:
+            os.chdir(project_loc)
+        except:
+            os.system("mkdir "+project_loc)
+            os.chdir(os.getcwd()+"/"+project_loc)
+
+
+
+    project_name=input("enter project name :")
     os.system("mkdir "+project_name+" && cd "+project_name+ " && mkdir "+project_name)
     os.chdir(os.getcwd()+"/"+project_name)
     os.system("python3 -m venv env_"+project_name)
@@ -156,7 +168,7 @@ def setup_project():
 
 
 def create_new_app():
-    app_name=input("enter app name:")
+    app_name=input("enter app name :")
     os.chdir(os.getcwd()+"/apps")
     with open("__init__.py","r") as f:
         data=f.read()
@@ -225,11 +237,11 @@ def create_new_app():
     print("\tlocalhost:5000/"+app_name+"/firsthtml")
 
 if __name__=='__main__':
-    inpt=input("Creating new project type YES/NO:").lower()
+    inpt=input("Creating new project type YES/NO :").lower()
     if inpt=="yes" or inpt=="y":
         setup_project()
     elif inpt=="no" or inpt=="n":
-        inpt= input("Want to add new app to existing project type YES/NO:").lower()
+        inpt= input("Want to add new app to existing project type YES/NO :").lower()
         if inpt=="yes" or inpt=="y":
             try:
                 create_new_app()
