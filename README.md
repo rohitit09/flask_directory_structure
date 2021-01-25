@@ -12,14 +12,14 @@
 ## Provide areguments
 1. creating project : YES/NO
 	
-	```type yes if you are creating new project for exiting project type no```
+	```type yes if you are creating new project for exit type no```
 2. project name
 	
 	```give any project name```
 3. Create new app: YES/NO
 	
-	```type yes if you are creating new project for exiting project type no```
-4. app name
+	```type yes if you are creating new project for exit type no```
+4. give app name
 		
 
 ## Want to create new app in existing project :
@@ -27,7 +27,8 @@
 2. run below command and give proper aregumnts
 	
 	```python3 create_flask_project.py```
-3. to test app copy and paste endpoint appeared in console
+3. give app name
+3. to check app created successfully, run endpoint appeared in console
 
 ## Requirnments :
 1. python3
